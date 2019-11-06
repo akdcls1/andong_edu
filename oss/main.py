@@ -27,8 +27,9 @@ def multiply(num1, num2):
     raise NotImplementedError("Not Implemented")
 
 @app.route('/divide/<num1>/<num2>')
-def divide(num1, num2):
-    raise NotImplementedError("Not Implemented")
+def divide(num1,num2):
+    ret= int(num1)/int(num2)
+    return str(ret) 
 
 @app.route('/factorial/<num1>')
 def factorial(num):
